@@ -1,0 +1,10 @@
+Code in C++
+
+void reversePrint(SinglyLinkedListNode* llist) {
+    
+    if(llist==NULL){    //terminating condition
+        return;
+    }
+    reversePrint(llist->next) ; //recursive call
+    cout<< llist->data << endl ;    //print
+}
