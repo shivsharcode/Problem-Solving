@@ -1,0 +1,11 @@
+// A Very Big Sum soln in CPP
+
+long aVeryBigSum(vector<long> ar) {
+    
+    long sum = 0 ;
+    for (int i=0; i<ar.size() ; i++){
+        sum = sum + ar[i] ;
+    }
+    
+    return sum ;
+}
