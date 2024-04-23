@@ -1,0 +1,15 @@
+//COMPARING THE TRIPLETS IN CPP
+
+vector<int> compareTriplets(vector<int> a, vector<int> b) {
+    int size = a.size() ;
+    int alice= 0, bob =0 ;
+    for(int i=0; i<size ; i++ ){
+        if(a[i]>b[i]){alice++ ;}
+        else if(a[i]<b[i]){bob++ ;} 
+    }
+    
+    vector<int>result = {alice, bob}  ;
+    
+    return result ;
+
+}      
