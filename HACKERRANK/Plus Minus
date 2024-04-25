@@ -1,0 +1,25 @@
+// Soln in C++ for HACKERRANK PLUS MINUS
+
+void plusMinus(vector<int> arr) {
+    
+   float pos = 0 , neg = 0 , zero = 0 ;
+   int size = arr.size() ;
+   
+   for (int i =0; i<size; i++) {
+       if (arr[i]>0) {
+           pos++ ;  
+       }
+       else if (arr[i]<0) {
+           neg++ ;
+       }
+       else {
+           zero++ ;
+       }
+   }
+   
+   float r_pos = pos/size;
+   float r_neg = neg/size ;
+   float r_zero = zero/size ;
+   
+   printf("%.5f\n%.5f\n%.5f", r_pos, r_neg, r_zero) ;
+}
