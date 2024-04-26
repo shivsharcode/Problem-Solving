@@ -1,5 +1,11 @@
 // MINI-MAX SUM soln in C++ 
 
+#include<algorithm>
+#include<iostream>
+#include<vector>
+
+using namespace std ;
+
 void miniMaxSum(vector<int> arr) {
     
     sort(arr.begin(), arr.end()) ;
