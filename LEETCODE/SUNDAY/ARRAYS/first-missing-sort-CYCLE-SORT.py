@@ -17,7 +17,7 @@ class Solution:
                 i += 1
 
         # now for each element in its correct order the value == index + 1
-        # the first occurance of index where the condition doesn't specify gives the smallest positive number not present
+        # the first occurance of index where the condition doesn't met gives the smallest positive number not present
         for i in range(n):
             if nums[i] != i + 1:
                 return i+1
