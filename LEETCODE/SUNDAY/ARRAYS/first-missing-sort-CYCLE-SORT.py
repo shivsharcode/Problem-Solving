@@ -10,7 +10,7 @@ class Solution:
             correctIndex = val - 1
 
             # check
-            if (val > 0 and val <= n) and nums[i] != nums[correctIndex]:
+            if (0< nums[i] <= n) and nums[i] != nums[correctIndex]:
                 #swap
                 nums[i], nums[correctIndex] = nums[correctIndex], nums[i]
             else:
